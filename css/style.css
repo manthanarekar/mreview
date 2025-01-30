@@ -20,6 +20,15 @@ p{
   margin-bottom: 0;
 }
 
+/* NavBar for Scroll */
+.show{
+  position: sticky;
+}
+
+.Do-not-show{
+  display: none;
+}
+
 /* Slider movie banner nav */
 .image-div{
   width: 100%;
@@ -99,8 +108,8 @@ p{
   top: 0;
   left: 0;
   width: 100%;
-   /* Higher than the gradient and carousel */
 }
+
 
 
 .main-banner-title-text{
@@ -175,36 +184,31 @@ p{
 }
 
 
-
-/* Category icons */
-
-.category-icon {
-  stroke-width: 0.45; 
-  transform: scale(0.9); 
-  padding-right: 12px;
-  width:30px;
-  height:30px;
-  fill: white
+.btn-category-active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
-.category-icon- {
-  stroke-width: 0.45; 
-  transform: scale(0.9); 
-  padding-right: 12px;
-  width:30px;
-  height:30px;
-  fill: white
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  gap: 20px;
 }
 
-.btn:active {
-  background-color: #b02a37; /* Darker blue */
-
+.card-img{
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
 }
 
-/* Optional: Hover state */
-.btn:hover {
-  background-color: #b02a37; /* Slightly darker blue */
+.movie-card{
+ 
+  padding: 0;
+  border-radius: 20px;
+  width: max-content;
 }
+
 
 /* Font css */
 .lato-thin {

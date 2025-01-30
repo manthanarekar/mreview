@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="filterMovies('all')">All</button>
+        <button onclick="filterMovies('horror')">Horror</button>
+        <button onclick="filterMovies('trending')">Trending</button>
+    </div>
+
+    <div id="movies" class="movies-container">
+        <!-- Movies will be dynamically inserted here -->
+    </div>
+
+    <script>
+        // Sample movie data
+        const movies = {
+            all: [
+                { title: "Movie 1", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️⭐️" },
+                { title: "Movie 2", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️" },
+                { title: "Movie 3", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️⭐️⭐️" },
+            ],
+            horror: [
+                { title: "Horror Movie 1", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️" },
+                { title: "Horror Movie 2", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️⭐️" },
+            ],
+            trending: [
+                { title: "Trending Movie 1", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️⭐️" },
+                { title: "Trending Movie 2", image: "https://via.placeholder.com/200", rating: "⭐️⭐️⭐️⭐️⭐️" },
+            ],
+        };
+
+        // Function to render movies
+        function filterMovies(category) {
+            const moviesContainer = document.getElementById("movies");
+            moviesContainer.innerHTML = ""; // Clear previous content
+
+            // Get movies based on the selected category
+            const selectedMovies = movies[category];
+
+            // Loop through and display movies
+            selectedMovies.forEach((movie) => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                card.innerHTML = `
+                    <img src="${movie.image}" alt="${movie.title}">
+                    <h3>${movie.title}</h3>
+                    <p>${movie.rating}</p>
+                `;
+
+                moviesContainer.appendChild(card);
+            });
+        }
+
+        // Show all movies by default
+        filterMovies("all");
+    </script>
+</body>
+</html>
