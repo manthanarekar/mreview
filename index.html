@@ -88,7 +88,8 @@
               </span>
               <p class="main-banner-title-text poppins-bold">Avengers: Infinity War</p>
               <div>
-                <button type="button" class="btn rounded-pill text-#202735 btn-danger fw-semibold" style="padding-inline: 5vw ;padding: 0.8vw 0px; margin-left: 40px; margin-top: 20px;display: flex ; align-items: center"><svg  class="play-btn-icon" viewBox="-1 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play [#1000]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" > <g id="Dribbble-Light-Preview" transform="translate(-65.000000, -3803.000000)" > <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M18.074,3650.7335 L12.308,3654.6315 C10.903,3655.5815 9,3654.5835 9,3652.8985 L9,3645.1015 C9,3643.4155 10.903,3642.4185 12.308,3643.3685 L18.074,3647.2665 C19.306,3648.0995 19.306,3649.9005 18.074,3650.7335" id="play-[#1000]"> </path> </g> </g> </g> </g></svg> Watch now</button>
+                <!-- <button type="button" class="btn rounded-pill text-#202735 btn-danger fw-semibold" style="padding-inline: 5vw ;padding: 0.8vw 0px; margin-left: 40px; margin-top: 20px;display: flex ; align-items: center"><svg  class="play-btn-icon" viewBox="-1 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play [#1000]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" > <g id="Dribbble-Light-Preview" transform="translate(-65.000000, -3803.000000)" > <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M18.074,3650.7335 L12.308,3654.6315 C10.903,3655.5815 9,3654.5835 9,3652.8985 L9,3645.1015 C9,3643.4155 10.903,3642.4185 12.308,3643.3685 L18.074,3647.2665 C19.306,3648.0995 19.306,3649.9005 18.074,3650.7335" id="play-[#1000]"> </path> </g> </g> </g> </g></svg> Watch now</button> -->
+                <button type="button" class="btn rounded-pill px-5  text-#202735 btn-danger fw-semibold" style=" padding: 0.8vw 0px; margin-left: 40px; margin-top: 20px;display: flex ; align-items: center"><svg  class="play-btn-icon" viewBox="-1 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play [#1000]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" > <g id="Dribbble-Light-Preview" transform="translate(-65.000000, -3803.000000)" > <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M18.074,3650.7335 L12.308,3654.6315 C10.903,3655.5815 9,3654.5835 9,3652.8985 L9,3645.1015 C9,3643.4155 10.903,3642.4185 12.308,3643.3685 L18.074,3647.2665 C19.306,3648.0995 19.306,3649.9005 18.074,3650.7335" id="play-[#1000]"> </path> </g> </g> </g> </g></svg> Watch now</button>
               </div>
             </div>
             <div style="position: relative;">
@@ -107,53 +108,67 @@
         <a class="fw-bold fs-4 justify-content-center text-white" href="#" >Mreview</a>
         <span>
           <a class="fw-normal mx-2 text-white" style="font-size: 1vw; " aria-current="page" href="#">Home</a>
-          <a class="fw-normal mx-2 text-white" style="font-size: 1vw; " aria-current="page" href="#">About us</a>
-          <a class="fw-normal mx-2  text-white" style="font-size: 1vw; " aria-current="page" href="#">Contact us</a>
+          <a class="fw-normal mx-2 text-white" style="font-size: 1vw; " aria-current="page" href="#moviescards">Movies</a>
+          <a class="fw-normal mx-2 text-white" style="font-size: 1vw; " aria-current="page" href="#about">About us</a>
+          <a class="fw-normal mx-2  text-white" style="font-size: 1vw; " aria-current="page" href="contact_us.html">Contact us</a>
         </span>
-        <button type="button" class="btn rounded-pill px-5 py-2 text-#202735 fw-semibold" style="background-color: white;">Sign in</button>
+        <a href="signin.html"><button type="button" class="btn rounded-pill px-5 py-2 text-#202735 fw-semibold" style="background-color: white;">Sign in</button></a>
       </div>
     </div>
   </div>
 
-  <!-- movies categorys -->
-   <div class="container my-5 " id="categorys">
-    <div class="col" style="display: flex; justify-content: center;">
-        <div  class="btn-group gap-2" role="group" aria-label="Button group example">
-        <button class="btn btn-outline-light  btn-category-active ac" onclick="setActive(this),filterMovies('all') "> All</button>
-        <button class="btn btn-outline-light" onclick="setActive(this)"> Tranding</button>
-        <button class="btn btn-outline-light" onclick="setActive(this)">Horror</button>
-        <button class="btn btn-outline-light" onclick="setActive(this)">Animation</button>
-    </div>
-  </div>
-  </div>
-  <!-- movies categorys end here -->
-
   <!-- movies cards -->
-  <!-- <div id="moviescards" class=" row movies-container" style="margin-inline: 300px; flex-wrap: nowrap; background-color: white;">
-</div> -->
+  <h2 class="top-rated-text">Top Rated Movies</h2>
+  <div id="moviescards" class=" row movies-container">
+
+  </div>
 
   <!-- movies cards end here -->
 
   <!-- About us starts here-->
-
+  <div class="Aboutus" id="about">
+    <h2 class="top-rated-text" style="margin: 0; margin-bottom: 20px;">About us</h2>
+    <p>Welcome to Mreview, your ultimate destination for movie reviews, ratings, and recommendations. We are passionate about bringing movie enthusiasts the best insights into the latest blockbusters, hidden gems, and timeless classics.</p>
+    <span class="text-white gap-3" style="display:flex; justify-content: center; margin-top: 20px;">
+      <div class="card" style="width: 18rem; background-color: #202735; border: 1px white solid ;">
+        <div class="card-body  text-center">
+          <h5 class="card-title text-danger fw-semibold">Movie Reviews</h5>
+          <hr style="margin: 0; margin-block: 5px;">
+          <p class="card-text">Stay updated with in-depth reviews of the latest blockbusters and hidden gems.</p>
+        </div>
+      </div> 
+      <div class="card" style="width: 18rem; background-color: #202735; border: 1px white solid ;">
+        <div class="card-body  text-center ">
+          <h5 class="card-title text-center text-danger fw-semibold">User Ratings</h5>
+          <hr style="margin: 0; margin-block: 5px;">
+          <p class="card-text">Join the community! Share your opinions and see what others think about the latest films.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; background-color: #202735;border: 1px white solid ;">
+        <div class="card-body text-center">
+          <h5 class="card-title text-danger fw-semibold">Top Picks</h5>
+          <hr style="margin: 0; margin-block: 5px;">
+          <p class="card-text">Discover handpicked movies based on popularity, critic scores, and audience ratings.</p>
+        </div>
+      </div>
+    
+    </span>
+  </div>  
 
 
   <!-- About us end here-->
 
-  <!-- Contact us starts here -->
-  
-
-
-  <!-- Contact us ends here -->
 
     <!-- footer -->
-    <div class="container-fluid text-center text-white">
-      <hr>
+    <div class="container-fluid text-center text-white " style="background-color: #202735;">
+      <hr class="m-0 py-2">
       <div class="row" style="display: block;">
         <div class="col">
+          <a href="signin.html">
             <Button class="btn bg-danger rounded-pill">
               <p class="mx-4 text-white fw-semibold">Sign in for more access</p>
             </Button>
+          </a>
         </div>
         <div class="row my-3">
           <div class="col justify-content-end mx-0 px-1" style="display: flex;">
@@ -182,10 +197,11 @@
       </div>
       <span>
         <a href="#" class="text-white fw-normal mx-2">Home</a>
-        <a href="#" class="text-white fw-normal mx-2">About us</a>
-        <a href="#" class="text-white fw-normal mx-2">Contact us</a>
+        <a href="#moviescards" class="text-white fw-normal mx-2">Movies</a>
+        <a href="#about" class="text-white fw-normal mx-2">About us</a>
+        <a href="#contact" class="text-white fw-normal mx-2">Contact us</a>
       </span>
-      <p class="my-2">&copy; Copyright. All Rights Reserved. 2025 </p>
+      <p class="py-2">&copy; Copyright. All Rights Reserved. 2025 </p>
     </div>
     <!-- script -->
     <!-- Bootstrap script web -->
